@@ -1,0 +1,18 @@
+# 部署/下载过程生成的日志
+*.log
+logs/
+
+# 集群 CA 与私钥（敏感文件，严禁入库）
+k8s-cluster-pki/
+
+# 离线物料（体积过大：RPM 包、镜像 tar、离线 bundle，通过 download.sh 重新获取）
+offline-assets/
+
+# 未下载完成的临时文件
+*.part
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+*.swp
+.DS_Store
